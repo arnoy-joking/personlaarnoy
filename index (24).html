@@ -1,0 +1,602 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Chemistry 1st Paper - HSC 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-[#1e293b] font-sans">
+  <!-- Header -->
+  <header class="bg-black flex items-center gap-2 px-4 py-3">
+    <img
+      alt="Blue Bangla text logo"
+      class="h-8 w-auto"
+      height="32"
+      src="https://storage.googleapis.com/a1aa/image/f6375d3d-e95f-4e1f-633e-1f921e8cfcf8.jpg"
+      width="32"
+    />
+    <img
+      alt="House icon logo"
+      class="h-8 w-auto"
+      height="32"
+      src="https://storage.googleapis.com/a1aa/image/5a3f5256-5bb5-4d7b-b0bb-40a6310045a2.jpg"
+      width="32"
+    />
+    <img
+      alt="Orange Bangla text logo"
+      class="h-8 w-auto"
+      height="32"
+      src="https://storage.googleapis.com/a1aa/image/c34d0099-7306-48a3-2820-dae85c205cc5.jpg"
+      width="64"
+    />
+    <h1 class="text-white font-bold text-lg ml-2">
+      Chemistry 1st Paper - HSC 2026
+    </h1>
+  </header>
+  <!-- Main content -->
+  <main class="p-4 flex flex-col md:flex-row gap-4">
+    <!-- Left section -->
+    <section
+      class="bg-[#273142] rounded-lg p-4 flex-1 min-h-[300px] md:min-h-[400px] flex flex-col"
+    >
+      <h2 class="text-white font-semibold mb-4">Live Class</h2>
+      <!-- Embed player -->
+      <div class="mb-4 aspect-video w-full rounded-md overflow-hidden bg-black">
+        <iframe
+          id="videoPlayer"
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/KaGqg9DhqFE"
+          title="Live Class Video Player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <button
+        id="downloadPdfBtn"
+        class="bg-black text-white rounded-md px-4 py-2 flex items-center gap-2 w-max"
+      >
+        <i class="far fa-file-pdf"></i> Download PDF
+      </button>
+    </section>
+    <!-- Right section -->
+    <aside
+      class="bg-[#273142] rounded-lg p-4 w-full md:w-72 flex flex-col max-h-[400px]"
+    >
+      <button
+        class="bg-black text-white rounded-md px-4 py-2 mb-4 flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-plus"></i> Add New Class
+      </button>
+      <h3 class="text-white font-semibold mb-2">Class List</h3>
+      <div
+        class="overflow-y-auto max-h-[320px] scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 rounded-md"
+      >
+        <ul id="classList" class="text-white text-sm space-y-1">
+          <li
+            class="text-center text-gray-300 font-semibold mb-2 select-none"
+            style="pointer-events:none"
+          >
+            ** সব ভিডিও পেতে স্ক্রল করো
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="KaGqg9DhqFE"
+            data-nname="কোষ ও কোষের গঠন"
+            data-npdf="20240527-1716747527-YpJ2RGMl.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="EN-6Teg-ZJM"
+            data-nname="কোষ ও এর গঠন পর্ব ২.২"
+            data-npdf="20240529-1716919264-WK9TgC7E.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="tRw6bOrMkwY"
+            data-nname="কোষ ও এর গঠন পর্ব ২.২"
+            data-npdf="20240529-1716919264-WK9TgC7E.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -২.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="n3d04l3AqiE"
+            data-nname="কোষ ও এর গঠন পর্ব-৩"
+            data-npdf="20240531-1717151708-PnLGeH7z.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="s8h5dQJbS60"
+            data-nname="কোষ ও এর গঠন পর্ব- ০৪"
+            data-npdf="20240603-1717361199-EhGZA0c2.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৪</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="-PFlwWeGcMk"
+            data-nname="কোষ ও এর গঠন পর্ব-৫"
+            data-npdf="20240605-1717589402-21nOUVWK.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৫</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="_9dxV6E6x5w"
+            data-nname="কোষ ও কোষের গঠন পর্ব -০৬"
+            data-npdf="20240607-1717766552-rRn6UUmR.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৬</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="VH64cvK6jk4"
+            data-nname="কোষ ও কোষের গঠন পর্ব -০৭"
+            data-npdf="20240610-1718024565-cKvdl9GB.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৭</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="YmHoUAxsZi4"
+            data-nname="কোষ ও এর গঠন পর্ব ৮"
+            data-npdf="20240612-1718138865-skHiksUO.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৮</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="lRPPRRxGKzg"
+            data-nname="কোষ ও এর গঠন পর্ব ৯"
+            data-npdf="20240626-1719387029-QgRnVfQ0.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -০৯</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="oEQc1LsygKg"
+            data-nname="কোষ ও কোষের গঠনের CQ solving ক্লাস"
+            data-npdf="20240701-1719841089-UuHYXphB.pdf"
+          >
+            <span>কোষ ও কোষের গঠনের CQ solving</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="L55sAexCNm8"
+            data-nname="কোষ ও এর গঠন -02"
+            data-npdf="20240705-1720129726-tUGAAdcm.pdf"
+          >
+            <span>কোষ ও কোষের গঠন পর্ব -১০</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="WTmCyvgg15g"
+            data-nname="কোষ বিভাজন পর্ব-০১"
+            data-npdf="20240909-1725819373-MedBoVyE.pdf"
+          >
+            <span>কোষ বিভাজন - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="CQliZYqkzuk"
+            data-nname="কোষ বিভাজন - পর্ব ০২ (HSC'26)"
+            data-npdf="20240911-1726002176-CQrADNIg.pdf"
+          >
+            <span>কোষ বিভাজন- পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="oVepAPSwxck"
+            data-nname="কোষ বিভাজন - পর্ব ০৩"
+            data-npdf="20240912-1726163847-4D8AyNcJ.pdf"
+          >
+            <span>কোষ বিভাজন - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="v9GauhdJ6Ks"
+            data-nname="কোষ বিভাজন - পর্ব ০৪"
+            data-npdf="20240915-1726413323-ceNzTXcN.pdf"
+          >
+            <span>কোষ বিভাজন - পর্ব ০৪</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="w2V6hYgfYBc"
+            data-nname="অণুজীব - পর্ব ০১"
+            data-npdf="20241018-1729260451-OrG7QkIT.pdf"
+          >
+            <span>অণুজীব - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="-x0lRkmrnO0"
+            data-nname="অনুজীব - পর্ব ০২"
+            data-npdf="20241021-1729532686-GLqHKciW.pdf"
+          >
+            <span>অনুজীব - পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="ov6pGd1hQa8"
+            data-nname="অণুজীব - পর্ব ০৩"
+            data-npdf="20241025-1729803181-JxPNl4fO.pdf"
+          >
+            <span>অণুজীব - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="-t0uivyL-LI"
+            data-nname="অণুজীব - ০৪"
+            data-npdf="20241026-1729885570-fMZIP0IQ.pdf"
+          >
+            <span>অণুজীব - পর্ব ০৪</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="yeGBgn8RZBo"
+            data-nname="অণুজীব - পর্ব ০৫"
+            data-npdf="20241027-1730049639-WO6miGig.pdf"
+          >
+            <span>অণুজীব - পর্ব ৫.১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="iiuxcPdyo-Q"
+            data-nname="অণুজীব - পর্ব ০৫"
+            data-npdf="20241027-1730049639-WO6miGig.pdf"
+          >
+            <span>অণুজীব - পর্ব ৫.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="7G-hUr-xpn8"
+            data-nname="অণুজীব - পর্ব ০৬"
+            data-npdf=""
+          >
+            <span>অণুজীব - পর্ব ০৬</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="tP5eVmOb6do"
+            data-nname="কোষ রসায়ন - পর্ব ০১"
+            data-npdf="20241202-1733086191-eo9ztJEi.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="cuHcbam2sz8"
+            data-nname="কোষ রসায়ন - পর্ব ০২"
+            data-npdf="20241204-1733264159-mq2fghnC.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ২.১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="bN894DP0v8Y"
+            data-nname="কোষ রসায়ন - পর্ব ০২"
+            data-npdf="20241204-1733264159-mq2fghnC.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ২.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="nN5_2UQ3sXI"
+            data-nname="কোষ রসায়ন - পর্ব ০৩"
+            data-npdf="20241206-1733439466-aon9ZcLw.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ৩.১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="p5fwpD5ED6w"
+            data-nname="কোষ রসায়ন - পর্ব ০৩"
+            data-npdf="20241206-1733439466-aon9ZcLw.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ৩.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="wen-mzc1r-w"
+            data-nname="কোষ রসায়ন - পর্ব ০৪"
+            data-npdf="20241209-1733696285-pcWsh4Y6.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ০৪</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="26788gbIqPU"
+            data-nname="কোষ রসায়ন - পর্ব ৫"
+            data-npdf="20241211-1733859880-SLLaMIuD.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ৫.১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="GYnfs4KJfUg"
+            data-nname="কোষ রসায়ন - পর্ব ৫"
+            data-npdf="20241211-1733859880-SLLaMIuD.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ৫.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="dauGNaS91L8"
+            data-nname="কোষ রসায়ন - পর্ব ০৬"
+            data-npdf="20241213-1734034617-3Rej0uUn.pdf"
+          >
+            <span>কোষ রসায়ন - পর্ব ০৬</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="je_HcLK4ygA"
+            data-nname="নগ্নবীজী ও আবৃতবীজী - পর্ব ০১"
+            data-npdf="20250121-1737482232-ZWxDrSXG.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="l3BExuFeErI"
+            data-nname="নগ্নবীজী ও আবৃতবীজী - পর্ব ০২"
+            data-npdf="20250123-1737648041-hv4QIukj.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী - পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="PymKxe2Qo0A"
+            data-nname="নগ্নবীজী ও আবৃতবীজী - পর্ব ০৩"
+            data-npdf="20250127-1737918763-HNNICxs4.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="XDkCF_VgYwk"
+            data-nname="নগ্নবীজী ও আবৃতবীজী - পর্ব ০৪"
+            data-npdf="20250129-1738089706-dlXBsmeH.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী - পর্ব ৪.১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="pYBFH10fHRI"
+            data-nname="নগ্নবীজী ও আবৃতবীজী - পর্ব ০৪"
+            data-npdf="20250129-1738089706-dlXBsmeH.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী - পর্ব ৪.২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="2-SUErpLvnw"
+            data-nname="নগ্নবীজী ও আবৃতবীজী  - পর্ব ০৫"
+            data-npdf="20250130-1738173721-cMmSjwTG.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী  - পর্ব ০৫</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="f5YyP2eKb-g"
+            data-nname="নগ্নবীজী ও আবৃতবীজী শেষ পর্ব"
+            data-npdf="20250131-1738264487-mnOs2jyR.pdf"
+          >
+            <span>নগ্নবীজী ও আবৃতবীজী শেষ পর্ব</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="3h456CVz270"
+            data-nname="বোটানি টিস্যু ও টিস্যুতন্ত্র - পর্ব ০১"
+            data-npdf="20250204-1738691900-uciSdu4k.pdf"
+          >
+            <span>বোটানি টিস্যু ও টিস্যুতন্ত্র - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="K39ONghcjfg"
+            data-nname="টিস্যু - পর্ব ০২"
+            data-npdf="20250207-1738865555-MFF2bxCT.pdf"
+          >
+            <span>টিস্যু - পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="UWWDa5edgWA"
+            data-nname="টিস্যু - পর্ব ০৩"
+            data-npdf="20250210-1739132880-2OVmsui2.pdf"
+          >
+            <span>টিস্যু - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="aV8vWA_0nko"
+            data-nname="টিস্যু ও টিস্যুতন্ত্রের শেষ অংশ"
+            data-npdf="20250215-1739642333-eysRtIn7.pdf"
+          >
+            <span>টিস্যু ও টিস্যুতন্ত্রের শেষ অংশ</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="5BeVBBCQX9A"
+            data-nname="শৈবাল ছত্রাক"
+            data-npdf="20250312-1741720411-XPROBpYS.pdf"
+          >
+            <span>শৈবাল ছত্রাক - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="0EZ8oE97OMY"
+            data-nname="শৈবাল ছত্রাক - পর্ব ০২"
+            data-npdf="20250315-1741978823-P759EvtF.pdf"
+          >
+            <span>শৈবাল ছত্রাক - পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="1vesKcPd8ZA"
+            data-nname="শৈবাল ও ছত্রাক - পর্ব ০৩"
+            data-npdf="20250317-1742169559-UI5Y1RWI.pdf"
+          >
+            <span>শৈবাল ও ছত্রাক - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="MKgdwSYiIRA"
+            data-nname="শৈবাল ও ছত্রাক - পর্ব ০৪"
+            data-npdf="20250322-1742586017-Gx5Zh1Fv.pdf"
+          >
+            <span>শৈবাল ও ছত্রাক - পর্ব ০৪</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="zuQeHvlJf-4"
+            data-nname="শৈবাল ছত্রাক - পর্ব ০৫"
+            data-npdf=""
+          >
+            <span>শৈবাল ছত্রাক - পর্ব ০৫</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="Z4UklPc6hqk"
+            data-nname="শৈবাল ছত্রাক - পর্ব ০৬"
+            data-npdf=""
+          >
+            <span>শৈবাল ছত্রাক - পর্ব ০৬</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="66sfKI8c9d4"
+            data-nname="ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০১"
+            data-npdf="20250416-1744744668-Wyq92K90.pdf"
+          >
+            <span>ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০১</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="Qk6UMGFvv_c"
+            data-nname="ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০২"
+            data-npdf="20250418-1744922328-CLmvvsbb.pdf"
+          >
+            <span>ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০২</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+          <li
+            class="watchli px-3 py-1 flex justify-between items-center rounded-md cursor-pointer hover:bg-[#3a4551]"
+            data-vid="JpM1CPE7OUc"
+            data-nname="ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০৩"
+            data-npdf=""
+          >
+            <span>ব্রায়োফাইটা ও টেরিডোফাইটা - পর্ব ০৩</span>
+            <i class="far fa-file-pdf text-red-600 ml-2"></i>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  <script>
+    const classList = document.getElementById("classList");
+    const videoPlayer = document.getElementById("videoPlayer");
+    const downloadPdfBtn = document.getElementById("downloadPdfBtn");
+
+    // Set initial PDF link from first item
+    function updateDownloadLink(pdfFile) {
+      if (pdfFile) {
+        downloadPdfBtn.disabled = false;
+        downloadPdfBtn.classList.remove("opacity-50", "cursor-not-allowed");
+        downloadPdfBtn.setAttribute(
+          "onclick",
+          `window.open('https://www.bondipathshala.com.bd/pdf/${pdfFile}', '_blank')`
+        );
+      } else {
+        downloadPdfBtn.disabled = true;
+        downloadPdfBtn.classList.add("opacity-50", "cursor-not-allowed");
+        downloadPdfBtn.removeAttribute("onclick");
+      }
+    }
+
+    // Initialize with first watchli's data-npdf
+    const firstWatchli = classList.querySelector(".watchli");
+    if (firstWatchli) {
+      updateDownloadLink(firstWatchli.getAttribute("data-npdf"));
+    } else {
+      updateDownloadLink(null);
+    }
+
+    // Click event for class list items
+    classList.querySelectorAll(".watchli").forEach((item) => {
+      item.addEventListener("click", () => {
+        const videoId = item.getAttribute("data-vid");
+        const pdfFile = item.getAttribute("data-npdf");
+
+        // Update iframe src
+        videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
+
+        // Update download PDF link
+        updateDownloadLink(pdfFile);
+      });
+    });
+  </script>
+</body>
+</html>
